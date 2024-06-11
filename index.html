@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="line1"></p>
+    <p id="line2"></p>
+    <h3 id="line3"></h3>
+    <h3 id="line4"></h3>
+    <h3 id="line5"></h3>
+    <h3 id="line6"></h3>
+    <h3 id="line7"></h3>
+    <h3 id="line8"></h3>
+    <p id="line9"></p>
+    <p id="line10"></p>
+    <p id="line11"></p>
+    <p id="line12"></p>
+    <p id="line13"></p>
+    <p id="line14"></p>
+    <p id="line15"></p>
+    <p id="line16"></p>
+    <p id="line17"></p>
+<script>
+//how to create an array
+fruits=["mango", "pawpaw","cashew","apple"];
+document.getElementById("line1").innerHTML= fruits;
+
+//making a list using javascript array
+place=["lagos", "Island", "sango", "berger"];
+let list= "<ul>";
+    place.forEach(myFunction);
+    list += "</ul>";
+    function myFunction(thevalue){
+        list += "<li>" + thevalue + "</li>";
+        document.getElementById("line2").innerHTML=list;
+    } ;
+
+    //This are the methods of an array:push,pop,at,join,length,concat
+
+    things=["apple","jos","lagos","HOMEFORT","tech","practice"];
+    //topush
+   things.push("javascript");
+    document.getElementById("line3").innerHTML=things;
+    //to pop
+    things.pop();
+    document.getElementById("line4").innerHTML=things;
+
+    //to at
+    thing=things.at(2);
+    document.getElementById("line5").innerHTML=thing;
+
+    //length
+    document.getElementById("line6").innerHTML=things.length;
+
+    //concat
+    things2=["hardware", "computer", "data"];
+    let allthings= things.concat(things2);
+
+    document.getElementById("line7").innerHTML=allthings;
+
+    //join
+    document.getElementById("line8").innerHTML=allthings.join("/");
+
+    const numbers=[7,8,6,2,13,22];
+    number=numbers.map(oneByone);
+    function oneByone(value){
+        return value*3
+    };
+    document.getElementById("line9").innerHTML=number;
+</script>
+
+
+    <!-- you dont create boolean objects because they always come up as false, and also are boolean is true,also all boolean wwithout a value is false
+    now to conditional booleans -->
+<input id="vote" value=" " />
+<button onclick="myFunction()"> check</button>
+<p id="verification"></p>
+<script>
+    function myFunction() {
+let votable= document.getElementById("vote").value;
+let verify= (votable < 30) ? "election not won": "won the election";
+document.getElementById("verfication").innerHTML= verify + "success";
+}
+  
+//use of sum
+const numbers[1,3,7,9,0,-2,8];
+let total=0
+for (let i=0; i<numbers.length; i++) {
+    total += numbers[i] ;
+}  
+function numbers {
+    return total
+    document.ge
+}
+</script>
+
+</body>
+</html>
